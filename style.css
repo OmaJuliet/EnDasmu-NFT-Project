@@ -25,7 +25,30 @@
 
 
 /* Subscribe section styling */
-
+input[type=submit] {
+  width: 150px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 20px;
+  background: linear-gradient(
+  to right, #f2cf43, #55d284);
+  border-width: 0;
+  font-family: segoe UI;
+  font-weight: 600;
+  font-size: 1rem
+}
+.subscribe {
+  color: white;
+  font-size: 40px;
+  font-family: helvetica;
+  font-weight: 400
+}
+.subs {
+  padding: 50px 30px;
+}
+* {
+  background-color: black;
+}
 
 /* Footer section styling */
 
