@@ -1,32 +1,452 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;1,400&family=Lobster&family=Moon+Dance&family=Murecho:wght@100&family=Poppins:wght@200&family=Roboto+Slab:wght@100&family=Satisfy&family=Send+Flowers&family=Shadows+Into+Light&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Hero section styling */
+body {
+    background-color: #171616;
+}
+
+/* Hero section styling: Assigned to Juliet*/
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.4;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header nav {
+    padding: 1.5rem 0;
+}
+
+header nav .nav-overlay {
+    display: none;
+}
+
+header nav .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .nav-inner .nav-logo {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+header nav .nav-inner .nav-hamburger {
+    display: none;
+}
+
+header nav .nav-inner .nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header nav .nav-inner .nav-links li {
+    margin: 0 1.4rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #ffffff;
+    transition: color 0.25s; 
+}
+
+header nav .nav-inner .nav-links li:hover {
+    color: #afe41f;
+}
+
+header nav .nav-inner .nav-links li .nav-button {
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    outline: none;
+    border: 1px solid white;
+    background: none;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    transition: background 0.25s;
+    margin-left: 1rem;
+}
+
+header nav .nav-inner .nav-links li .nav-button:hover {
+    background: linear-gradient(to right, #f2cf43, #55d284);
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+header nav .nav-inner .nav-links li a {
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 1.9rem;
+    margin: auto;
+}
+
+header .header-inner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+header .header-inner .header-intro {
+    padding-bottom: 6rem;
+    color: #ffffff;
+    width: 50%;
+}
+
+header .header-inner .header-intro-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3.5rem;
+}
+
+header .header-inner .header-intro-lead {
+    color: rgb(195, 191, 191);
+    padding: 1.25rem 0 1.5rem 0;
+    font-family: 'Raleway', sans-serif;
+    ;
+}
+
+header .header-inner .header-intro-buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+header .header-inner .header-intro-buttons .header-lightgreen-button {
+    background: linear-gradient(to right, #f2cf43, #55d284);
+    color: #ffffff;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    outline: none;
+    border: 0;
+    padding: 1rem 3rem;
+    transition: background 0.25s;
+}
+
+header .header-inner .header-intro-buttons .header-lightgreen-button:hover {
+    background: linear-gradient(to right, #e0bd32, #388d59);
+    transition: 0.5s ease-in;
+    font-weight: bold;
+}
+
+header .header-inner .header-intro-buttons .header-transparent-button {
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    outline: none;
+    color: #ffffff;
+    padding: 1rem 3rem;
+}
+
+header .header-inner .header-intro-buttons .header-transparent-button:hover {
+    background: none;
+    border: 1px solid white;
+    border-radius: 2rem;
+}
+
+.bg-image {
+    width: 450px;
+    height: 650px;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+/*Hero section styling ends */
+
+/* Artwork section styling: assigned to Juliet*/
+#artwork {
+    max-width: 1180px;
+    padding: 0 1.5rem;
+    margin: auto;
+}
+
+#artwork .artwork-inner {
+    position: relative;
+    box-shadow: 0 4px 10px 0 rgba(60, 81, 68, 0.37);
+    backdrop-filter: blur(5px);
+    top: -7.5rem;
+    min-height: 11rem;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#artwork .artwork-inner>* {
+    position: relative;
+    z-index: 10;
+}
+
+
+#artwork .artwork-inner .part1 {
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+} 
+
+
+@media screen and (min-width: 1024px) {
+    #artwork .artwork-inner .testing {
+        margin-left: 20px;
+    }
+
+    #artwork .artwork-inner .part1 .testing11, 
+    #artwork .artwork-inner .part1 .testing12{
+        margin-left: 70px;
+    }
+    .testing3 {
+        margin-right: 40px;
+    }
+}
+
+.testing, .testing11, .testing12,
+.testing3 {
+    color: white;
+}
+
+.figures {
+    font-size: 35px;
+    font-weight: bolder;
+} 
+
+.amount {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.testing3 {
+    margin-right: 5px;
+    margin-bottom: 20px;
+} 
+
+.art-top {
+    display: flex;
+    margin-bottom: 14px;
+} 
+
+.img-cont {
+    display: flex;
+}
+
+.avatar {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: -10px;
+    border: 1px solid #2c303a;
+}
+.testing2 {
+    object-fit: cover;
+    width:  100%;
+    height: 100%;
+}
+
+
+/* Artwork section styling ends */
+
+/* Media queries for hero and artwork section: assigned to Juliet*/
+@media screen and (width:1024px) {
+    #artwork .artwork-inner {
+        top: -0.8rem; 
+    }
+}
+@media screen and (max-width: 935px) {
+    header .header-inner .header-intro {
+        width: 80%;
+    }
+    #artwork .artwork-inner .part1 .testing11, 
+    #artwork .artwork-inner .part1 .testing12{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    header {
+        height: auto;
+    }
+
+    header .header-inner .header-intro {
+        padding: 3rem 0 12rem 0;
+    }
+}
+
+@media screen and (max-width: 686px) {
+    header {
+        height: auto;
+    }
+
+    header .header-inner .header-intro {
+        padding: 3rem 0 12rem 0;
+    }
+} 
+
+@media screen and (max-width: 686px) {
+    #artwork .artwork-inner {
+        text-align: center;
+    }
+
+    header nav .nav-inner .nav-logo {
+        margin-left: 0;
+    }
+
+    header nav .nav-overlay {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background: linear-gradient(to right, #c3a73a, #4eb576);
+        visibility: hidden;
+        transition: all 0.5s ease;
+        z-index: 500;
+    }
+
+    header nav .nav-overlay-close {
+        color: #000;
+        font-size: 3rem;
+        position: fixed;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    header nav .nav-overlay-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+    }
+
+    header nav .nav-overlay-links li {
+        font-size: 1.5rem;
+        color: #000;
+        padding: 1rem 0;
+    }
+
+    header nav .nav-overlay-links li a {
+        color: #000;
+        font-weight: bold;
+    }
+
+    header nav .nav-overlay.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header nav .nav-inner .nav-links {
+        display: none;
+    }
+
+    header nav .nav-inner .nav-hamburger {
+        display: block;
+        font-size: 2.5rem;
+        color: #ffffff;
+    }
+
+    header .header-inner .header-intro {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .header-inner .header-intro-buttons {
+        justify-content: center;
+    }
+
+    .bg-image {
+        display: none;
+    }
+
+    #artwork {
+        max-width: 1020px;
+    }
+
+    #artwork .artwork-inner {
+        text-align: center;
+    }
+
+    #artwork .artwork-inner {
+        display: block;
+        min-height: 12rem;
+    }
+
+    .testing {
+        margin-bottom: 18px;
+        justify-content: center;
+    }
+
+    .figures {
+        font-size: 30px;
+    }
+
+    .art-top {
+        margin-top: 50px;
+        justify-content: center;
+    } 
+
+    .img-cont {
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* Media queries for hero and artwork section ends*/
+
+
+/* Popular items section styling: assigned to Debbie*/
 
 
 
-/* Artwork section styling */
+/* Artist section styling: assigned to Lateefah Bello */
 
 
 
-/* Popular items section styling */
+/* Company section styling: assigned to Lena */
 
 
 
-/* Artist section styling */
+/* Subscribe section styling: assigned to Lotathebaby */
 
 
 
-/* Company section styling */
-
-
-
-/* Subscribe section styling */
-
-
-/* Footer section styling */
-
-
+/* Footer section styling: assigned to Ellie */
