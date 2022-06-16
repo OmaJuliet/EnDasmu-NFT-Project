@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   overflow: hidden;
+   background:linear-gradient(#5b4b3c, #212121, #1f2120) ; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ .container {
+    max-width: 576px;
+    margin: auto;
+    display: grid;
+    padding:32px 16px;
+    gap: 20px;
+   
+}
+@media ( min-width: 860px ) {
+    .container{
+          grid-template-columns: repeat(2, 1fr);
+          max-width: 960px;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px 16px;
+    max-width: 500px;
+}
+@media ( max-width: 385px ) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 200px;
+    }
+ }
+
+ .card1, .card2, .card3, .card4 {
+    background-color: rgba(110, 107, 78, 0.75);
+    border-radius: 30px;
+    height: 150px;
+    position: relative;
+}
+.card1{
+    background: linear-gradient(#3f4533,#46432d);
+}
+.card2{
+    background: linear-gradient(#515351, #2b483e);
+}
+.card3{
+    background: linear-gradient(#58504c, #453330);
+}
+.card4{
+    background: linear-gradient(#655c54, #493b2e);
+}
+img{
+    position: absolute;
+    left: -5%;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+}
+@media (min-width:436px) {
+    img{
+        left: 2%;
+    }
+}
+ .content h5{
+    color:#252102;
+}
+.content h1{
+    color: white;
+    padding-top: 25px;
+}
+.content p{
+    color: white;
+    font-size: 12px;
+    padding-top: 25px;
+}
+.content{
+    max-width: 500px;
+    padding: 30px;
+    text-align: left;
+} 
