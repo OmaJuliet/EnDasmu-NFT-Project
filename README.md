@@ -17,7 +17,7 @@ An NFT project website built from dribble design by EHC front-end team 3
 
 
 
-    <!------------Artist section: Assigned to Wandey----------------->
+    <!------------Artist section: Assigned to Lateefah Bello----------------->
 
 
 
