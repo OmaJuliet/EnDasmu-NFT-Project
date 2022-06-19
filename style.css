@@ -35,7 +35,8 @@ input[type=submit] {
   border-width: 0;
   font-family: segoe UI;
   font-weight: 600;
-  font-size: 1rem
+  font-size: 1rem;
+  color: black;
 }
 .subscribe {
   color: white;
@@ -48,6 +49,26 @@ input[type=submit] {
 }
 * {
   background-color: black;
+}
+@media only screen and (max-width: 480px){
+ input[type=submit] {
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 20px;
+  background: linear-gradient(
+  to right, #f2cf43, #55d284);
+  border-width: 0;
+  font-family: segoe UI;
+  font-weight: 600;
+  font-size: 0.5rem;
+}
+.subscribe {
+  color: white;
+  font-size: 15px;
+  font-family: helvetica;
+  font-weight: 400
+} 
 }
 
 /* Footer section styling */
