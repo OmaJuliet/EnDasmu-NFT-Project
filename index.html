@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,20 +6,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEAM 3 NFT project</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+
+  <!-- Link to external style sheet-->
+  <link rel="stylesheet" href="style.css">
+
+    
 </head>
 <body>
     <!--EHCPairProgrammingExercise. TEAM 3. Create an NFT project -->
 
     <!------------Hero section: Assigned to Juliet----------------->
+      <header>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-inner container">
+        <h1 class="nav-logo">EnDasmu</h1>
+        <ul class="nav-links">
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#marketplace">MarketPlace</a></li>
+          <li><a href="#community">Community</a></li>
+          <li data-aos="fade-down-left" data-aos-delay="50" data-aos-duration="2000">
+            <a href="#" class="nav-button">Connect Wallet</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <i class="bx bx-menu-alt-right nav-hamburger" onclick="toggleMenu()"></i>
+      </div>
+
+      <!-- Overlay Menu section-->
+      <div class="nav-overlay">
+        <i class="bx bx-x nav-overlay-close" onclick="toggleMenu()"></i>
+        <ul class="nav-overlay-links">
+          <li><a href="#collection" onclick="toggleMenu()">Collection</a></li>
+          <li><a href="#market" onclick="toggleMenu()">MarketPlace</a></li>
+          <li><a href="#community" onclick="toggleMenu()">Community</a></li>
+          <li><a href="#wallet" onclick="toggleMenu()">Connect Wallet</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header Content -->
+    <div class="header-inner container">
+      <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="2000" class="header-intro">
+        <h1 class="header-intro-heading">
+          Discover <br> Digital Art and <br> Collect NFTs.
+        </h1>
+        <p class="header-intro-lead">
+          EnDasmu is a shared liquidity NFT market smart contract which is
+          used by mulitiple website to provide the users the best possible
+          experience.
+        </p>
+        <div class="header-intro-buttons">
+          <a href="#" class="header-lightgreen-button">Get Started</a>
+          <a href="#" class="header-transparent-button">Learn More <span style="width: 20px">&#x27F6;</span></a>
+        </div>
+      </div>
+
+      <!--Header Image -->
+      <div class="">
+        <img data-aos="fade-up-left" data-aos-delay="50" data-aos-duration="2000" src="images/sample1.png"
+          class="bg-image">
+      </div>
 
 
-   
+    </div>
 
-    <!------------Artwork section: Assigned to Juliet----------------->
+  </header>
+  <main>
+    <!--------------Hero Section ends ------------>
+
+    <!------------Artwork Section: Assigned to Juliet----------------->
+    <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" id="artwork">
+      <div class="artwork-inner">
+      <div class="part1">
+        <div class="testing">
+          <p>Artwork</p>
+          <h3 class="figures">27k+</h3>
+        </div>
+
+        <div class="testing11">
+          <p>Auction</p>
+          <h3 class="figures">25k+</h3>
+        </div>
+ 
+        <div class="testing12">
+          <p>Artist</p>
+          <h3 class="figures">12k+</h3>
+        </div>
+      </div>
 
 
+        <div class="testing3">
+          <div class="art-top">
+            <p>Art</p>
+            <p class="amount">3.4 ETH</p>
+          </div>
+          <div class="img-cont">
+            <section class="avatar">
+              <img src="images/nft project1.jpg" class="testing2">
+            </section>
+
+            <section class="avatar">
+              <img src="images/nft project2.jpg" class="testing2">
+            </section>
+
+            <section class="avatar">
+              <img src="images/nft project3.jpg" class="testing2">
+            </section>
+
+            <section class="avatar">
+              <img src="images/nft project4.jpg" class="testing2">
+            </section>
+
+            <section class="avatar">
+              <img src="images/nft project6.jpg" class="testing2">
+            </section>
+            
+          </div>
+      </div>
+
+
+    </div>
 
 
     <!------------Popular Items section: Assigned to Debbie-------------->
@@ -173,6 +288,10 @@
     </footer>
     
  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="script.js"></script>
 </body>
