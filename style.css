@@ -1,3 +1,8 @@
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -25,8 +30,159 @@
 
 
 /* Subscribe section styling */
+input[type=submit] {
+  width: 150px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 20px;
+  background: linear-gradient(
+  to right, #f2cf43, #55d284);
+  border-width: 0;
+  font-family: segoe UI;
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+}
+.subscribe {
+  color: white;
+  font-size: 40px;
+  font-family: helvetica;
+  font-weight: 400
+}
+.subs {
+  padding: 50px 30px;
+}
+* {
+  background-color: black;
+}
+@media only screen and (max-width: 480px){
+ input[type=submit] {
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 20px;
+  background: linear-gradient(
+  to right, #f2cf43, #55d284);
+  border-width: 0;
+  font-family: segoe UI;
+  font-weight: 600;
+  font-size: 0.5rem;
+}
+.subscribe {
+  color: white;
+  font-size: 15px;
+  font-family: helvetica;
+  font-weight: 400
+} 
+}
+
+ /*Footer section styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+
+}
 
 
-/* Footer section styling */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: block;
+}
 
 
+
+ul{
+    list-style: none;
+}
+
+.footer-col ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+
+
+}
+
+
+.footer-col ul li a:hover{
+color: #bbbb;
+padding-left: 10px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col{
+    width: 30%;
+    padding:0 15px;
+
+}
+
+
+.footer-col .social-links a{
+display:inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin-right:0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.s ease;
+
+}
+
+
+.footer-col .social-links a:hover{
+    color: #bbbb;
+    padding-left: 10px;
+    background-color: #ffffff;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+   margin-bottom: 30px;
+   font-weight: 500;
+   position: relative;
+   column-fill: balance;
+}
+
+
+.footer{
+    background-color: #24262b;
+    padding: 70px ; 
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
