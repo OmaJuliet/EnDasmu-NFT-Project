@@ -435,6 +435,48 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
 
 
 /* Artist section styling: assigned to Lateefah Bello */
+.card{
+    background-color: black;  
+    color:white;   
+}
+#card1{
+    background-color: rgb(20, 19, 19);
+    position:absolute;
+      border-radius: 30px;
+      margin-top: 60px;
+      
+}
+#card2{
+    background-color: rgb(20, 19, 19);
+    position:absolute;
+      border-radius: 30px;
+      margin-top: 60px;
+      
+}
+.card-img-top{
+    border-radius:50%;
+    width:80px;
+   height:80px;
+  position:relative;
+  bottom:30px;
+  margin-left:100px;
+}
+.card-img-bottom{
+    width:290px;
+    top:20px;
+border-radius: 30px;
+     position: relative;
+     right:16px;
+ 
+}
+.card-body{
+    width: 290px;
+}
+@media(max-width:450px){
+    #card2{
+        margin-top: 500px;
+    }
+}
 
 
 
