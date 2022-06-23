@@ -414,12 +414,24 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
 
 /* Popular items section styling: assigned to Debbie*/
 
+
+/* 
 .container {
     max-width: 576px;
     margin: auto;
     display: grid;
-    padding: 32px 16px;
+    padding: 15px 0px;
     gap: 20px;
+    border: 1px solid yellow;
+} */
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    padding: 0 0rem;
+    margin-right: 4%;
 }
 
 @media ( min-width: 860px) {
@@ -569,7 +581,7 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
 
 .toplist-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem;
 }
 
@@ -582,6 +594,9 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
     font-size: 1.01em;
 }
 
+
+/* Company section styling: assigned to Lena */
+
 .row-companyimg {
     display: flex;
     flex-wrap: wrap;
@@ -591,6 +606,13 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
     overflow: hidden;
     width: 100%;
     height: 100%;
+}
+
+.courses {
+    padding: 3em 0em;
+    margin: 0;
+    height: 0%;
+    margin-right: 10%
 }
 
 .companyimg {
@@ -650,10 +672,12 @@ input[type=submit] {
 
 /*Footer section styling assigned to Ellie*/
 
-.container {
+.footer-wrapper {
     line-height: 1.5;
     max-width: 1170px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .row {
@@ -669,7 +693,7 @@ ul {
     text-decoration: none;
     color: #ffffff;
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     transition: all 0.3s ease;
 }
@@ -684,15 +708,18 @@ ul {
 }
 
 .footer-col {
-    width: 30%;
-    padding: 0 15px;
+    width: 100%;
+    padding: 15px 24px;
+}
+
+.start {
+    width: 250%;
 }
 
 .footer-col .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
     margin-right: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -708,18 +735,17 @@ ul {
 }
 
 .footer-col h4 {
-    font-size: 18px;
+    font-size: 19px;
     text-transform: capitalize;
     color: white;
     margin-bottom: 30px;
-    font-weight: 500;
+    font-weight: bold;
     position: relative;
     column-fill: balance;
 }
 
 .footer {
-    background-color: #24262b;
-    padding: 70px;
+    margin: 5% 0%;
 }
 
 @media(max-width: 767px) {
