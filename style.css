@@ -1,9 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;1,400&family=Lobster&family=Moon+Dance&family=Murecho:wght@100&family=Poppins:wght@200&family=Roboto+Slab:wght@100&family=Satisfy&family=Send+Flowers&family=Shadows+Into+Light&display=swap');
-
-
-*{
-
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,9 +7,12 @@
 
 body {
     background-color: #171616;
+    color: #ffffff;
 }
 
+
 /* Hero section styling: Assigned to Juliet*/
+
 a {
     text-decoration: none;
 }
@@ -52,7 +51,6 @@ header nav .nav-inner .nav-logo {
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: 400;
-
 }
 
 header nav .nav-inner .nav-hamburger {
@@ -70,7 +68,7 @@ header nav .nav-inner .nav-links li {
     font-size: 0.875rem;
     font-weight: 400;
     color: #ffffff;
-    transition: color 0.25s; 
+    transition: color 0.25s;
 }
 
 header nav .nav-inner .nav-links li:hover {
@@ -189,7 +187,9 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
     margin-bottom: 20px;
 }
 
+
 /* Hero section ends. Artwork section styling: assigned to Juliet*/
+
 #artwork {
     max-width: 1180px;
     padding: 0 1.5rem;
@@ -215,22 +215,19 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
     z-index: 10;
 }
 
-
 #artwork .artwork-inner .part1 {
     margin-left: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
-} 
-
+    justify-content: space-around;
+}
 
 @media screen and (min-width: 1024px) {
     #artwork .artwork-inner .testing {
         margin-left: 20px;
     }
-
-    #artwork .artwork-inner .part1 .testing11, 
-    #artwork .artwork-inner .part1 .testing12{
+    #artwork .artwork-inner .part1 .testing11,
+    #artwork .artwork-inner .part1 .testing12 {
         margin-left: 70px;
     }
     .testing3 {
@@ -238,7 +235,9 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
     }
 }
 
-.testing, .testing11, .testing12,
+.testing,
+.testing11,
+.testing12,
 .testing3 {
     color: white;
 }
@@ -246,7 +245,7 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
 .figures {
     font-size: 35px;
     font-weight: bolder;
-} 
+}
 
 .amount {
     font-weight: bold;
@@ -257,43 +256,47 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
 .testing3 {
     margin-right: 5px;
     margin-bottom: 20px;
-} 
+}
 
 .art-top {
     display: flex;
     margin-bottom: 14px;
-} 
+}
 
 .img-cont {
     display: flex;
 }
 
 .avatar {
-    width: 60px; 
+    width: 60px;
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
     margin-left: -10px;
     border: 1px solid #2c303a;
 }
+
 .testing2 {
     object-fit: cover;
-    width:  100%;
+    width: 100%;
     height: 100%;
 }
 
+
 /* Media queries for hero and artwork section: assigned to Juliet*/
+
 @media screen and (width:1024px) {
     #artwork .artwork-inner {
-        top: -0.8rem; 
+        top: -0.8rem;
     }
 }
+
 @media screen and (max-width: 935px) {
     header .header-inner .header-intro {
         width: 80%;
     }
-    #artwork .artwork-inner .part1 .testing11, 
-    #artwork .artwork-inner .part1 .testing12{
+    #artwork .artwork-inner .part1 .testing11,
+    #artwork .artwork-inner .part1 .testing12 {
         margin-left: 40px;
     }
 }
@@ -302,7 +305,6 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
     header {
         height: auto;
     }
-
     header .header-inner .header-intro {
         padding: 3rem 0 12rem 0;
     }
@@ -312,21 +314,18 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
     header {
         height: auto;
     }
-
     header .header-inner .header-intro {
         padding: 3rem 0 12rem 0;
     }
-} 
+}
 
 @media screen and (max-width: 686px) {
     #artwork .artwork-inner {
         text-align: center;
     }
-
     header nav .nav-inner .nav-logo {
         margin-left: 0;
     }
-
     header nav .nav-overlay {
         display: block;
         position: fixed;
@@ -340,7 +339,6 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
         transition: all 0.5s ease;
         z-index: 500;
     }
-
     header nav .nav-overlay-close {
         color: #000;
         font-size: 3rem;
@@ -348,7 +346,6 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
         top: 1.5rem;
         right: 1.5rem;
     }
-
     header nav .nav-overlay-links {
         display: flex;
         flex-direction: column;
@@ -356,73 +353,58 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
         align-items: center;
         height: inherit;
     }
-
     header nav .nav-overlay-links li {
         font-size: 1.5rem;
         color: #000;
         padding: 1rem 0;
     }
-
     header nav .nav-overlay-links li a {
         color: #000;
         font-weight: bold;
     }
-
     header nav .nav-overlay.open {
         opacity: 1;
         visibility: visible;
     }
-
     header nav .nav-inner .nav-links {
         display: none;
     }
-
     header nav .nav-inner .nav-hamburger {
         display: block;
         font-size: 2.5rem;
         color: #ffffff;
     }
-
     header .header-inner .header-intro {
         width: 100%;
         text-align: center;
     }
-
     header .header-inner .header-intro-buttons {
         justify-content: center;
     }
-
     .bg-image {
         display: none;
     }
-
     #artwork {
         max-width: 1020px;
     }
-
     #artwork .artwork-inner {
         text-align: center;
     }
-
     #artwork .artwork-inner {
         display: block;
         min-height: 12rem;
     }
-
     .testing {
         margin-bottom: 18px;
         justify-content: center;
     }
-
     .figures {
         font-size: 30px;
     }
-
     .art-top {
         margin-top: 50px;
         justify-content: center;
-    } 
-
+    }
     .img-cont {
         justify-content: center;
         align-items: center;
@@ -432,200 +414,323 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
 
 /* Popular items section styling: assigned to Debbie*/
 
+.container {
+    max-width: 576px;
+    margin: auto;
+    display: grid;
+    padding: 32px 16px;
+    gap: 20px;
+}
 
-
-/* Artist section styling: assigned to Lateefah Bello */
-.card{
-    background-color: black;  
-    color:white;   
-}
-#card1{
-    background-color: rgb(20, 19, 19);
-    position:absolute;
-      border-radius: 30px;
-      margin-top: 60px;
-      
-}
-#card2{
-    background-color: rgb(20, 19, 19);
-    position:absolute;
-      border-radius: 30px;
-      margin-top: 60px;
-      
-}
-.card-img-top{
-    border-radius:50%;
-    width:80px;
-   height:80px;
-  position:relative;
-  bottom:30px;
-  margin-left:100px;
-}
-.card-img-bottom{
-    width:290px;
-    top:20px;
-border-radius: 30px;
-     position: relative;
-     right:16px;
- 
-}
-.card-body{
-    width: 290px;
-}
-@media(max-width:450px){
-    #card2{
-        margin-top: 500px;
+@media ( min-width: 860px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 960px;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 16px;
+    max-width: 500px;
+}
+
+@media ( max-width: 385px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 200px;
+    }
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    background-color: rgba(110, 107, 78, 0.75);
+    border-radius: 30px;
+    height: 150px;
+    position: relative;
+}
+
+.card1 {
+    background: linear-gradient(#3f4533, #46432d);
+}
+
+.card2 {
+    background: linear-gradient(#515351, #2b483e);
+}
+
+.card3 {
+    background: linear-gradient(#58504c, #453330);
+}
+
+.card4 {
+    background: linear-gradient(#655c54, #493b2e);
+}
+
+.debimg {
+    position: absolute;
+    left: -5%;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+}
+
+@media (min-width:436px) {
+    .debimg {
+        left: 2%;
+    }
+}
+
+.content h5 {
+    color: rgb(179, 177, 177);
+}
+
+.content h1 {
+    color: white;
+    padding-top: 25px;
+    font-size: 2.5rem;
+}
+
+.content p {
+    color: white;
+    font-size: 12px;
+    padding-top: 25px;
+    font-size: 1.01rem;
+}
+
+.content {
+    max-width: 500px;
+    padding: 30px;
+    text-align: left;
+}
+
+
+/* Artist section styling: assigned to Lateefah Bello */
+
+
+/* 
+.card {
+    background-color: black;
+    color: white;
+}
+
+#card1 {
+    background-color: rgb(20, 19, 19);
+    position: absolute;
+    border-radius: 30px;
+    margin-top: 60px;
+}
+
+#card2 {
+    background-color: rgb(20, 19, 19);
+    position: absolute;
+    border-radius: 30px;
+    margin-top: 60px;
+}
+
+.card-img-top {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 30px;
+    margin-left: 100px;
+}
+
+.card-img-bottom {
+    width: 290px;
+    top: 20px;
+    border-radius: 30px;
+    position: relative;
+    right: 16px;
+}
+
+.card-body {
+    width: 290px;
+}
+
+@media(max-width:450px) {
+    #card2 {
+        margin-top: 500px;
+    }
+} */
 
 
 /* Company section styling: assigned to Lena */
 
+.toplist-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
 
+.card h1 {
+    font-size: 2.2em;
+}
+
+.list-text {
+    width: 75%;
+    font-size: 1.01em;
+}
+
+.row-companyimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.companyimg {
+    width: 150px;
+    /* border: 1px solid yellow; */
+    object-fit: cover;
+}
 
 
 /* Subscribe section styling: assigned to Lotathebaby */
 
 input[type=submit] {
-  width: 150px;
-  height: 50px;
-  display: inline-block;
-  border-radius: 20px;
-  background: linear-gradient(
-  to right, #f2cf43, #55d284);
-  border-width: 0;
-  font-family: segoe UI;
-  font-weight: 600;
-  font-size: 1rem;
-  color: black;
+    width: 140px;
+    height: 41px;
+    display: inline-block;
+    border-radius: 20px;
+    background: linear-gradient( to right, #f2cf43, #55d284);
+    border-width: 0;
+    font-family: segoe UI;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: black;
 }
+
 .subscribe {
-  color: white;
-  font-size: 40px;
-  font-family: helvetica;
-  font-weight: 400
+    color: white;
+    font-size: 3.5rem;
+    font-family: helvetica;
+    font-weight: 400;
+    width: 60%
 }
+
 .subs {
-  padding: 50px 30px;
+    padding: 50px 30px;
+}
+
+@media only screen and (max-width: 480px) {
+    input[type=submit] {
+        width: 100px;
+        height: 30px;
+        display: inline-block;
+        border-radius: 20px;
+        background: linear-gradient( to right, #f2cf43, #55d284);
+        border-width: 0;
+        font-family: segoe UI;
+        font-weight: 600;
+        font-size: 0.5rem;
+    }
+    .subscribe {
+        color: white;
+        font-size: 15px;
+        font-family: helvetica;
+        font-weight: 400
+    }
 }
 
 
-@media only screen and (max-width: 480px){
- input[type=submit] {
-  width: 100px;
-  height: 30px;
-  display: inline-block;
-  border-radius: 20px;
-  background: linear-gradient(
-  to right, #f2cf43, #55d284);
-  border-width: 0;
-  font-family: segoe UI;
-  font-weight: 600;
-  font-size: 0.5rem;
-}
-.subscribe {
-  color: white;
-  font-size: 15px;
-  font-family: helvetica;
-  font-weight: 400
-} 
-}
+/*Footer section styling assigned to Ellie*/
 
-
-
- /*Footer section styling assigned to Ellie*/
-.container{
+.container {
     line-height: 1.5;
     max-width: 1170px;
     margin: auto;
-    
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: block;
 }
 
-
-
-ul{
+ul {
     list-style: none;
 }
 
-.footer-col ul li a{
+.footer-col ul li a {
     text-decoration: none;
     color: #ffffff;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 400;
     transition: all 0.3s ease;
-
-
 }
 
-
-.footer-col ul li a:hover{
-color: #bbbb;
-padding-left: 10px;
+.footer-col ul li a:hover {
+    color: #bbbb;
+    padding-left: 10px;
 }
 
-.footer-col ul li:not(:last-child){
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.footer-col{
+.footer-col {
     width: 30%;
-    padding:0 15px;
+    padding: 0 15px;
 }
 
-
-.footer-col .social-links a{
-display:inline-block;
-height: 40px;
-width: 40px;
-background-color: rgba(255,255,255,0.2);
-margin-right:0 10px 10px 0;
-text-align: center;
-line-height: 40px;
-border-radius: 50%;
-color: #ffffff;
-transition: all 0.s ease;
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.s ease;
 }
 
-
-.footer-col .social-links a:hover{
+.footer-col .social-links a:hover {
     color: #bbbb;
     padding-left: 10px;
     background-color: #ffffff;
 }
 
-.footer-col h4{
+.footer-col h4 {
     font-size: 18px;
     text-transform: capitalize;
     color: white;
-   margin-bottom: 30px;
-   font-weight: 500;
-   position: relative;
-   column-fill: balance;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    column-fill: balance;
 }
 
-
-.footer{
+.footer {
     background-color: #24262b;
-    padding: 70px ; 
+    padding: 70px;
 }
 
-@media(max-width: 767px){
-    .footer-col{
+@media(max-width: 767px) {
+    .footer-col {
         width: 50%;
         margin-bottom: 30px;
     }
 }
 
-@media(max-width: 574px){
-    .footer-col{
+@media(max-width: 574px) {
+    .footer-col {
         width: 100%;
     }
 }
-

@@ -1,334 +1,321 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEAM 3 NFT project</title>
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  
-  <!-- Boxicons -->
-  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  <!-- AOS Animations -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
 
-  <!-- Link to external style sheet-->
-  <link rel="stylesheet" href="style.css">
+    <!-- AOS Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    
+    <!-- Link to external style sheet-->
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
+
 <body>
     <!--EHCPairProgrammingExercise. TEAM 3. Create an NFT project -->
 
     <!------------Hero section: Assigned to Juliet----------------->
-      <header>
-    <!-- Navigation Bar -->
-    <nav>
-      <div class="nav-inner container">
-        <h1 class="nav-logo">EnDasmu</h1>
-        <ul class="nav-links">
-          <li><a href="#collection">Collection</a></li>
-          <li><a href="#marketplace">MarketPlace</a></li>
-          <li><a href="#community">Community</a></li>
-          <li data-aos="fade-down-left" data-aos-delay="50" data-aos-duration="2000">
-            <a href="#" class="nav-button">Connect Wallet</a>
-          </li>
-        </ul>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="nav-inner container">
+                <h1 class="nav-logo">EnDasmu</h1>
+                <ul class="nav-links">
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#marketplace">MarketPlace</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li data-aos="fade-down-left" data-aos-delay="50" data-aos-duration="2000">
+                        <a href="#" class="nav-button">Connect Wallet</a>
+                    </li>
+                </ul>
 
-        <!-- Hamburger Menu -->
-        <i class="bx bx-menu-alt-right nav-hamburger" onclick="toggleMenu()"></i>
-      </div>
-
-      <!-- Overlay Menu section-->
-      <div class="nav-overlay">
-        <i class="bx bx-x nav-overlay-close" onclick="toggleMenu()"></i>
-        <ul class="nav-overlay-links">
-          <li><a href="#collection" onclick="toggleMenu()">Collection</a></li>
-          <li><a href="#market" onclick="toggleMenu()">MarketPlace</a></li>
-          <li><a href="#community" onclick="toggleMenu()">Community</a></li>
-          <li><a href="#wallet" onclick="toggleMenu()">Connect Wallet</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Header Content -->
-    <div class="header-inner container">
-      <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="2000" class="header-intro">
-        <h1 class="header-intro-heading">
-          Discover <br> Digital Art and <br> Collect NFTs.
-        </h1>
-        <p class="header-intro-lead">
-          EnDasmu is a shared liquidity NFT market smart contract which is
-          used by mulitiple website to provide the users the best possible
-          experience.
-        </p>
-        <div class="header-intro-buttons">
-          <a href="#" class="header-lightgreen-button">Get Started</a>
-          <a href="#" class="header-transparent-button">Learn More <span style="width: 20px">&#x27F6;</span></a>
-        </div>
-      </div>
-
-      <!--Header Image -->
-      <div class="">
-        <img data-aos="fade-up-left" data-aos-delay="50" data-aos-duration="2000" src="images/sample1.png"
-          class="bg-image">
-      </div>
-
-
-    </div>
-
-  </header>
-  <main>
-    <!--------------Hero Section ends ------------>
-
-    <!------------Artwork Section: Assigned to Juliet----------------->
-    <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" id="artwork">
-      <div class="artwork-inner">
-      <div class="part1">
-        <div class="testing">
-          <p>Artwork</p>
-          <h3 class="figures">27k+</h3>
-        </div>
-
-        <div class="testing11">
-          <p>Auction</p>
-          <h3 class="figures">25k+</h3>
-        </div>
- 
-        <div class="testing12">
-          <p>Artist</p>
-          <h3 class="figures">12k+</h3>
-        </div>
-      </div>
-
-
-        <div class="testing3">
-          <div class="art-top">
-            <p>Art</p>
-            <p class="amount">3.4 ETH</p>
-          </div>
-          <div class="img-cont">
-            <section class="avatar">
-              <img src="images/nft project1.jpg" class="testing2">
-            </section>
-
-            <section class="avatar">
-              <img src="images/nft project2.jpg" class="testing2">
-            </section>
-
-            <section class="avatar">
-              <img src="images/nft project3.jpg" class="testing2">
-            </section>
-
-            <section class="avatar">
-              <img src="images/nft project4.jpg" class="testing2">
-            </section>
-
-            <section class="avatar">
-              <img src="images/nft project6.jpg" class="testing2">
-            </section>
-            
-          </div>
-      </div>
-
-
-    </div>
-
-
-    <!------------Popular Items section: Assigned to Debbie-------------->
-    <section
-      data-aos="fade-right"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="2000"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center">
-   
-      <div class="container">
-        <div class="cards">
-
-          <div class="card1">
-            <img src="images/africa print.png" />
-          </div>
-
-          <div class="card2">
-            <img src="images/africa print.png" />
-          </div>
-
-          <div class="card3">
-            <img src="images/africa print.png" />
-          </div>
-
-          <div class="card4">
-            <img src="images/africa print.png" />
-          </div>
-
-        </div>
-
-        <div class="content">
-          <h5>Popular Item</h5>
-          <h1>Hot Trending<br> On This <br>Week.</h1>
-          <p>
-            Various kinds of NFTs that are trending the trend <br>will be reset
-            every week. Don't miss out on the best NFTs<br> every week.
-          </p>
-          <p>see all <i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
-        </div> 
-
-      </div>
-    </section>
-
-
-
-    <!------------Artist section: Assigned to Wandey----------------->
-     <div class="container mt-5">    
-        <div class="row">
-          <div class="col-lg-4 col-md-12 col-sm-12 ">
-            <div class="card">
-                <h1>Top List<br> Artist.</h1><br><br>
-                <p>We have dozens of Artists who contribute to create amazing works.</p>
+                <!-- Hamburger Menu -->
+                <i class="bx bx-menu-alt-right nav-hamburger" onclick="toggleMenu()"></i>
             </div>
+
+            <!-- Overlay Menu section-->
+            <div class="nav-overlay">
+                <i class="bx bx-x nav-overlay-close" onclick="toggleMenu()"></i>
+                <ul class="nav-overlay-links">
+                    <li><a href="#collection" onclick="toggleMenu()">Collection</a></li>
+                    <li><a href="#market" onclick="toggleMenu()">MarketPlace</a></li>
+                    <li><a href="#community" onclick="toggleMenu()">Community</a></li>
+                    <li><a href="#wallet" onclick="toggleMenu()">Connect Wallet</a></li>
+                </ul>
             </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 "> 
-               <div id="card1" class="card">
-            <img class="card-img-top"  src="images/cake.jpg" alt="Card image">
-            <div class="card-body">
-                <h3 class="text-center">Johnny Five</h3>
-                <p class="text-center">Bigarate Survey,March 22</p>
-                <img class="card-img-bottom" src="images/Queen-Elizabeth-II.jpg">
-            </div>
-          </div></div>
-          <div class="col-lg-4 col-md-6 col-sm-12 "> 
-            <div id="card2" class="card">
-         <img class="card-img-top"  src="images/cake.jpg" alt="Card image">
-         <div class="card-body">
-             <h3 class="text-center">Lucinta Luna</h3>
-             <p class="text-center">Bigarate Survey,March 22</p>
-             <img class="card-img-bottom" src="images/Queen-Elizabeth-II.jpg">
-         </div>
-       </div></div>
-  
-        </div>
-        </div>
+        </nav>
 
-
-
-
-    <!-------------Company section: Assigned to Lena-------------------->
-    <section class="courses">
-        <div class="row">
-            
-                <img src="quixel.png" id="qui">
-            
-
-                <img src="unreal engine.png" id="ueng">
-            
-    
-                <img src="metamask2.png">
-            
-        
-                <img src="ei_1655043330974-removebg-preview-3.png">
-        
-                <img src="oculus.png">
-        </div>
-    </section>
-
-
-
-
-    <!------------Subscribe section: Assigned to Kosy----------------->
-  <html>
-  <div class="subs">
-  <h2 class="subscribe">
-    Subscribe to Get Fresh <br>News Update About <br>NFTs.
-  </h2>
-  <div class="container">
-    <input type="submit" value="Subscribe">
-  </div>
-  </div>
-</html>
-
-    <!------------Footer section: Assigned to Ellie----------------->
-    <footer class="footer">
-        <div class="container">
-            <div class="row"> 
-                <div class="footer-col">
-                    <h4>Endasmu</h4>
-                    <ul>
-                        <li><a href="#">Lorem ipsum dolor sit amet,
-                        adipiscing elit sed do eismud tempor</a></li>   
-                       
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-telegram"></i></a>
-                        </div> 
-                          
-                            <li><a href="#"></a>copyright @ MetaSpace 2022</li>
-                    </ul>  
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Explore</h4>
-                    <ul>
-                        <li><a href="#">Art</a></li>
-                        <li><a href="#">Collections</a></li>
-                        <li><a href="#">Domain Name</a></li>
-                        <li><a href="#">Utility</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Statistic</h4>
-                    <ul>
-                        <li><a href="#">Ranking</a></li>
-                        <li><a href="#">Activity</a></li>
-                    </ul>
-                </div>
-                
-                
-                <div class="footer-col">
-                    <h4>Resource</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Platform Status</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
+        <!-- Header Content -->
+        <div class="header-inner container">
+            <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="2000" class="header-intro">
+                <h1 class="header-intro-heading">
+                    Discover <br> Digital Art and <br> Collect NFTs.
+                </h1>
+                <p class="header-intro-lead">
+                    EnDasmu is a shared liquidity NFT market smart contract which is used by mulitiple website to provide the users the best possible experience.
+                </p>
+                <div class="header-intro-buttons">
+                    <a href="#" class="header-lightgreen-button">Get Started</a>
+                    <a href="#" class="header-transparent-button">Learn More <span style="width: 20px">&#x27F6;</span></a>
                 </div>
             </div>
-        </div>
-    </footer>
-    
- 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 
-    <script src="script.js"></script>
+            <!--Header Image -->
+            <div class="">
+                <img data-aos="fade-up-left" data-aos-delay="50" data-aos-duration="2000" src="images/sample1.png" class="bg-image">
+            </div>
+
+
+        </div>
+
+    </header>
+    <main>
+        <!--------------Hero Section ends ------------>
+
+        <!------------Artwork Section: Assigned to Juliet----------------->
+        <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" id="artwork">
+            <div class="artwork-inner">
+                <div class="part1">
+                    <div class="testing">
+                        <p>Artwork</p>
+                        <h3 class="figures">27k+</h3>
+                    </div>
+
+                    <div class="testing11">
+                        <p>Auction</p>
+                        <h3 class="figures">25k+</h3>
+                    </div>
+
+                    <div class="testing12">
+                        <p>Artist</p>
+                        <h3 class="figures">12k+</h3>
+                    </div>
+                </div>
+
+
+                <div class="testing3">
+                    <div class="art-top">
+                        <p>Art</p>
+                        <p class="amount">3.4 ETH</p>
+                    </div>
+                    <div class="img-cont">
+                        <section class="avatar">
+                            <img src="images/nft project1.jpg" class="testing2">
+                        </section>
+
+                        <section class="avatar">
+                            <img src="images/nft project2.jpg" class="testing2">
+                        </section>
+
+                        <section class="avatar">
+                            <img src="images/nft project3.jpg" class="testing2">
+                        </section>
+
+                        <section class="avatar">
+                            <img src="images/nft project4.jpg" class="testing2">
+                        </section>
+
+                        <section class="avatar">
+                            <img src="images/nft project6.jpg" class="testing2">
+                        </section>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!------------Popular Items section: Assigned to Debbie-------------->
+            <section data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+
+                <div class="container">
+                    <div class="cards">
+
+                        <div class="card1">
+                            <img class="debimg" src="images/africa print.png" />
+                        </div>
+
+                        <div class="card2">
+                            <img class="debimg" src="images/africa print.png" />
+                        </div>
+
+                        <div class="card3">
+                            <img class="debimg" src="images/africa print.png" />
+                        </div>
+
+                        <div class="card4">
+                            <img class="debimg" src="images/africa print.png" />
+                        </div>
+
+                    </div>
+
+                    <div class="content">
+                        <h5>Popular Item</h5>
+                        <h1>Hot Trending<br> On This <br>Week.</h1>
+                        <p>
+                            Various kinds of NFTs that are trending the trend will be reset every week. Don't miss out on the best NFT every week.
+                        </p>
+                        <p>see all <i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <!------------Artist section: Assigned to Wandey----------------->
+            <div class="toplist-wrapper mt-5">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 ">
+                        <div class="card">
+                            <h1>Top List<br> Artist.</h1><br><br>
+                            <p class="list-text">We have dozens of Artists who contribute to create amazing works.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                        <div id="card1" class="card">
+                            <img class="card-img-top" src="images/cake.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h3 class="text-center">Johnny Five</h3>
+                                <p class="text-center">Bigarate Survey,March 22</p>
+                                <img class="card-img-bottom" src="images/Queen-Elizabeth-II.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                        <div id="card2" class="card">
+                            <img class="card-img-top" src="images/cake.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h3 class="text-center">Lucinta Luna</h3>
+                                <p class="text-center">Bigarate Survey,March 22</p>
+                                <img class="card-img-bottom" src="images/Queen-Elizabeth-II.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <!-------------Company section: Assigned to Lena-------------------->
+            <section class="courses">
+                <div class="row-companyimg">
+
+                    <img class="companyimg" src="images/quixel.png" id="qui">
+
+
+                    <img class="companyimg" src="images/oculus.png" id="ueng">
+
+
+                    <img class="companyimg" src="images/metamask2.png">
+
+
+                    <img class="companyimg" src="images/ei_1655043330974-removebg-preview-3.png">
+
+                    <img class="companyimg" src="images/oculus.png">
+                </div>
+            </section>
+
+
+
+
+            <!------------Subscribe section: Assigned to Kosy----------------->
+            <html>
+            <div class="subs">
+                <h2 class="subscribe">
+                    Subscribe to Get Fresh News Update About NFTs.
+                </h2>
+                <div>
+                    <input type="submit" value="Subscribe" class="subbtn">
+                </div>
+            </div>
+
+            </html>
+
+            <!------------Footer section: Assigned to Ellie----------------->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Endasmu</h4>
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit amet,
+                    adipiscing elit sed do eismud tempor</a></li>
+
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-telegram"></i></a>
+                                </div>
+
+                                <li>
+                                    <a href="#"></a>copyright @ MetaSpace 2022
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Explore</h4>
+                            <ul>
+                                <li><a href="#">Art</a></li>
+                                <li><a href="#">Collections</a></li>
+                                <li><a href="#">Domain Name</a></li>
+                                <li><a href="#">Utility</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Statistic</h4>
+                            <ul>
+                                <li><a href="#">Ranking</a></li>
+                                <li><a href="#">Activity</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="footer-col">
+                            <h4>Resource</h4>
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Platform Status</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+
+            <script src="script.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
