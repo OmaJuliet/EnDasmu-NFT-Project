@@ -1,38 +1,3 @@
-
-
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Hero section styling */
-
-
-
-/* Artwork section styling */
-
-
-
-/* Popular items section styling */
-
-
-
-/* Artist section styling */
-
-
-
-/* Company section styling */
-
-
-
-/* Subscribe section styling */
-
-
- /*Footer section styling */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body{
@@ -59,7 +24,10 @@ body{
     flex-wrap: block;
 }
 
-
+p{
+  color: white;
+  font-size: 12px;
+}
 
 ul{
     list-style: none;
@@ -69,7 +37,7 @@ ul{
     text-decoration: none;
     color: #ffffff;
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     transition: all 0.3s ease;
 
@@ -102,9 +70,13 @@ margin-right:0 10px 10px 0;
 text-align: center;
 line-height: 40px;
 border-radius: 50%;
-color: #ffffff;
+color: #cbc6c6;
 transition: all 0.s ease;
 
+}
+
+.footer-col p{
+    margin-top: 30px;
 }
 
 
@@ -115,30 +87,35 @@ transition: all 0.s ease;
 }
 
 .footer-col h4{
-    font-size: 18px;
+
     text-transform: capitalize;
     color: white;
-   margin-bottom: 30px;
-   font-weight: 500;
-   position: relative;
-   column-fill: balance;
+    margin-bottom: 5px;
+    font-weight: 500;
+    position: relative;
+    column-fill: balance;
 }
 
 
 .footer{
-    background-color: #24262b;
+    background:linear-gradient(#5b4b3c, #212121, #1f2120) ; 
     padding: 70px ; 
 }
 
-@media(max-width: 767px){
-    .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
+@media(max-width: 600px){
+    .footer{
+        justify-content: center;
     }
+    .footer, .row{
+       display: flex;
+       flex-direction: column;
+       margin: 20px;
+    }
+ .footer-col h4 {
+  padding-top: 20px;
+}
+.footer-col .social-links a{
+    margin: 10px;
 }
 
-@media(max-width: 574px){
-    .footer-col{
-        width: 100%;
-    }
 }
