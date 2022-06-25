@@ -413,7 +413,7 @@ header .header-inner .header-intro-buttons .header-transparent-button:hover {
     margin-top: 10px;
     height: 16.7%;
     width: 270px;
-    margin-left: 12%;
+    margin-left: 11%;
 }
 
 .card-body{
@@ -651,6 +651,10 @@ ul {
         margin-top: 50px;
         margin-bottom: 50rem;
     }
+    .top-listcard {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    } 
     .top-wrapper h1 {
         font-size: 2.1em;
         line-height: 1.3;
@@ -671,6 +675,10 @@ ul {
 
     #top1, #top2 {
         height: 8%;
+    }
+
+    #top2{
+        margin-left: 0%; 
     }
 
     /*=================================COMPANY SECTION: LENA QUERIES================================== */
@@ -806,6 +814,9 @@ ul {
     #top1, #top2 {
         height: 7.8%;
         width: 220px;
+    }
+    #top2 {
+        margin-left: 9%;
     }
 
     .img-top {
